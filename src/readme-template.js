@@ -4,10 +4,37 @@ module.exports = responseData => {
 
 
     return `
-    ## ${title}
+    # ${ title}
     
-    ## ${description}
+    ## Description 
+    ${ description }
 
-    Testing data connection
+    ## Table Of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contribution](#contribution)
+    * [Tests](#tests)
+    * [Questions](#questions)
+
+    ## Installation
+    ${ installation }
+
+    ## Usage
+    ${ usage }
+
+    ## License
+    ${ license }
+
+    ## Contribution
+    ${ contribution }
+
+    ## Tests
+    ${ tests }
+
+    ## Questions
+    To contact me with any further questions:
+    -[GitHub](https://github.com/${ github })
+    -[Email](mailto://${ email })
     `
 }
