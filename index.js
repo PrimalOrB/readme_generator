@@ -2,6 +2,8 @@
 const inquirer = require( 'inquirer' );
     // load generate readme module
 const generateReadme = require( './src/readme-template.js' );
+    // save file
+const saveReadme = require( './utils/generate-readme.js' );
 
 const promptInput = () => {
     return inquirer.prompt([
@@ -132,6 +134,12 @@ const promptInput = () => {
 promptInput()
 .then( data => { // collect form data
     return generateReadme( data ) // send to generate readme
+})
+.then( file => {
+    return saveReadme( file )
+})
+.then( message => {
+    console.log( message )
 })
 .catch( err => {
     console.log( err )
