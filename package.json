@@ -1,0 +1,24 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "node.js application to generate a readme.md file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimalOrB/readme_generator.git"
+  },
+  "keywords": [
+    "node.js",
+    "readme",
+    "generator"
+  ],
+  "author": "Andrew Ogilvie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PrimalOrB/readme_generator/issues"
+  },
+  "homepage": "https://github.com/PrimalOrB/readme_generator#readme"
+}
