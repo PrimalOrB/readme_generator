@@ -1,5 +1,7 @@
     // load inquirer
-const inquirer = require('inquirer')
+const inquirer = require( 'inquirer' );
+    // load generate readme module
+const generateReadme = require( './src/readme-template.js' );
 
 const promptInput = () => {
     return inquirer.prompt([
@@ -11,7 +13,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter title!')
+                    console.log( 'Enter title!' )
                     return false
                 }
             }
@@ -24,7 +26,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter a description!')
+                    console.log( 'Enter a description!' )
                     return false
                 }
             }
@@ -37,7 +39,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter installation instructions!')
+                    console.log( 'Enter installation instructions!' )
                     return false
                 }
             }
@@ -50,7 +52,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter usage directions!')
+                    console.log( 'Enter usage directions!' )
                     return false
                 }
             }
@@ -64,7 +66,7 @@ const promptInput = () => {
                 if( input.length ) { //check for length to validate
                     return true
                 } else {
-                    console.log('Select a license!')
+                    console.log( 'Select a license!' )
                     return false
                 }
             }
@@ -77,7 +79,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter contribution guidelines!')
+                    console.log( 'Enter contribution guidelines!' )
                     return false
                 }
             }
@@ -90,7 +92,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter test instructions!')
+                    console.log( 'Enter test instructions!' )
                     return false
                 }
             }
@@ -103,7 +105,7 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter your GitHub username!')
+                    console.log( 'Enter your GitHub username!' )
                     return false
                 }
             }
@@ -116,14 +118,21 @@ const promptInput = () => {
                 if( input ) {
                     return true
                 } else {
-                    console.log('Enter your email address!')
+                    console.log( 'Enter your email address!' )
                     return false
                 }
             }
         }
-    ]).then(data => {
-        console.log( data )
+    ]).then( data => {
+        return data
     })
 }
 
+// initialize prompts
 promptInput()
+.then( data => { // collect form data
+    return generateReadme( data ) // send to generate readme
+})
+.catch( err => {
+    console.log( err )
+})
