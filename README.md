@@ -1,34 +1,34 @@
 
-    # Test Application Name
-    
-    ## Description 
-    Test Description Of Application
+# Test Application Title
 
-    ## Table Of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contribution](#contribution)
-    * [Tests](#tests)
-    * [Questions](#questions)
+## Description 
+Test Application Description
 
-    ## Installation
-    Test installation Instructions
+## Table Of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Usage
-    Test Use Instructions
+## Installation
+Test Installation Instructions
 
-    ## License
-    MIT
+## Usage
+Test Use Instructions
 
-    ## Contribution
-    Test Contribution Guidelines
+## License
+MIT
 
-    ## Tests
-    Test Instructions
+## Contribution
+Test Contribution Guidelines
 
-    ## Questions
-    To contact me with any further questions:
-    -[GitHub](https://github.com/PrimalOrB)
-    -[Email](mailto://primalorb@gmail.com)
+## Tests
+Test Instructions
+
+## Questions
+To contact me with any further questions:
+-[GitHub](https://github.com/PrimalOrB)
+-[Email](mailto://primalorb@gmail.com)
     
