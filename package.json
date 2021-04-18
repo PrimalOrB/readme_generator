@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/PrimalOrB/readme_generator/issues"
   },
-  "homepage": "https://github.com/PrimalOrB/readme_generator#readme"
+  "homepage": "https://github.com/PrimalOrB/readme_generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
