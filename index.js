@@ -10,7 +10,7 @@ const promptInput = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'Enter title of your application',
+            message: 'Enter title of your application ( * required )',
             validate: input => {
                 if( input ) {
                     return true
@@ -23,7 +23,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'description',
-            message: 'Enter a description of your application',
+            message: 'Enter a description of your application ( * required )',
             validate: input => {
                 if( input ) {
                     return true
@@ -36,7 +36,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'installation',
-            message: 'Enter installation instructions for your application',
+            message: 'Enter installation instructions for your application ( * required )',
             validate: input => {
                 if( input ) {
                     return true
@@ -49,7 +49,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'usage',
-            message: 'Enter instructions for use of your application',
+            message: 'Enter instructions for use of your application ( * required  )',
             validate: input => {
                 if( input ) {
                     return true
@@ -62,10 +62,10 @@ const promptInput = () => {
         { 
             type: 'checkbox',
             name: 'license',
-            message: 'Select a license for your application',
+            message: 'Select a license for your application ( * required = 1 )',
             choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC', 'None'],
             validate: input => {
-                if( input.length ) { //check for length to validate
+                if( input.length === 1 ) { //check for length to validate
                     return true
                 } else {
                     console.log( 'Select a license!' )
@@ -76,7 +76,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'contribution',
-            message: 'Enter contribution guidelines for other developers',
+            message: 'Enter contribution guidelines for other developers ( * required  )',
             validate: input => {
                 if( input ) {
                     return true
@@ -89,7 +89,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'tests',
-            message: 'Enter test instructions for your application',
+            message: 'Enter test instructions for your application ( * required  )',
             validate: input => {
                 if( input ) {
                     return true
@@ -102,7 +102,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'github',
-            message: 'Enter your GitHub username',
+            message: 'Enter your GitHub username ( * required  )',
             validate: input => {
                 if( input ) {
                     return true
@@ -115,7 +115,7 @@ const promptInput = () => {
         { 
             type: 'input',
             name: 'email',
-            message: 'Enter your email address',
+            message: 'Enter your email address ( * required  )',
             validate: input => {
                 if( input ) {
                     return true

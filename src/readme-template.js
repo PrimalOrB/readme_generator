@@ -34,7 +34,7 @@ ${ tests }
 
 ## Questions
 To contact me with any further questions:
--[GitHub](https://github.com/${ github })
--[Email](mailto://${ email })
-    `
+- [GitHub](https://github.com/${ github })
+- [Email](mailto://${ email })
+`
 }
