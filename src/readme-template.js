@@ -4,18 +4,19 @@ const generateList = listItem => {
 return `${listItem
     .map( ( { sublevel, item } ) => {
         // 2x spaces per sublevel
-        const space = '  '
+        const space = '  ';
         // repeate spaces by sublevel value
        return `${ space.repeat( sublevel ) }* ${ item }
 `} )
 // join
 .join( '' ) }`
-}
+};
 
 
 module.exports = responseData => {
+    // descructure the responses data
     const { title, description, installation, usage, license, contribution, tests, github, email } = responseData
-
+    // return statement, with generated lists included
     return `
 # ${ title }
 
@@ -34,13 +35,11 @@ ${ description }
 ${ generateList( installation ) }
 ## Usage
 ${ generateList( usage )  }
-
 ## License
 ${ license }
 
 ## Contribution
 ${ generateList( contribution )  }
-
 ## Tests
 ${ generateList( tests )  }
 
