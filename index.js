@@ -104,21 +104,21 @@ Add new ${type} instruction / sub-instruction
     return inquirer.prompt([
         { // ask for list sub-level
             type: 'number',
-            name: 'sublist-level',
+            name: 'sublevel',
             message: 'Enter list sub-level ( 1 - 4 )',
             default: 1,
             validate: input => {
-                if( input ) {
+                if( !input === NaN || input >= 1 && input <= 4 ) {
                     return true
                 } else {
-                    console.log( 'Enter list sub-level value!' )
+                    console.log( 'Enter list sub-level value between 1-4!' )
                     return false
                 }
             }
         },
         { // ask for list item
             type: 'input',
-            name: `${type}-item`,
+            name: `item`,
             message: `Enter ${type} instructions for your application ( * required )`,
             validate: input => {
                 if( input ) {
@@ -143,7 +143,7 @@ Add new ${type} instruction / sub-instruction
             return data; // end function and return all data
         }
     });
-}
+};
 
 
 
@@ -162,14 +162,14 @@ promptInput()
     return promptList( `tests`, data ) // recursive tests list builder
 })
 .then( data => { // collect form data
-    return generateReadme( data ) // send to generate readme
+    return generateReadme( data ) // send to generate readme content
 })
 .then( file => {
-    return saveReadme( file )
+    return saveReadme( file ) // save readme file
 })
 .then( message => {
-    console.log( message )
+    console.log( message ) // return success message
 })
 .catch( err => {
-    console.log( err )
+    console.log( err ) // return any errors
 })
