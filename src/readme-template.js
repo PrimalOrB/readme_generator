@@ -1,6 +1,8 @@
 module.exports = responseData => {
     const { title, description, installation, usage, license, contribution, tests, github, email } = responseData
 
+    console.log( responseData )
+
 
 
     return `
@@ -34,7 +36,7 @@ ${ tests }
 
 ## Questions
 To contact me with any further questions:
-- [GitHub](https://github.com/${ github })
-- [Email](mailto://${ email })
+* [GitHub](https://github.com/${ github })
+* [Email](mailto://${ email })
 `
 }
