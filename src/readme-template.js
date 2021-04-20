@@ -1,3 +1,13 @@
+    // licenses reference file
+const licenseArr = require( './licenses.js' );
+
+const licenseGen = (arr, license) => {
+        // filtered license obj
+    const licenseObj = arr.filter( item => item.name == license)
+    return licenseObj
+};
+
+
 // function to generate list with sub-items
 const generateList = listItem => {
     // return map function
@@ -17,8 +27,11 @@ module.exports = responseData => {
     // descructure the responses data
     const { title, description, installation, usage, license, contribution, tests, github, email } = responseData
     // return statement, with generated lists included
+    const licenseObj = licenseGen( licenseArr, license )
+
     return `
 # ${ title }
+[![License: ${licenseObj[0].tag}](${licenseObj[0].badge})](${licenseObj[0].url})
 
 ## Description 
 ${ description }
@@ -36,7 +49,7 @@ ${ generateList( installation ) }
 ## Usage
 ${ generateList( usage )  }
 ## License
-${ license }
+This application is covered under the [${ licenseObj[0].name }](${licenseObj[0].url}) license.
 
 ## Contribution
 ${ generateList( contribution )  }

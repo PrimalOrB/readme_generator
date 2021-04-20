@@ -1,9 +1,16 @@
     // load inquirer
 const inquirer = require( 'inquirer' );
+    // licenses reference file
+const licenseArr = require( './src/licenses.js' );
     // load generate readme module
 const generateReadme = require( './src/readme-template.js' );
     // save file
 const saveReadme = require( './utils/generate-readme.js' );
+    // create list of license names for use in the prompts  
+const licenseList = licenseArr.map( item => {
+    return item.name
+})
+
 
     // prompts for single entry data ( not lists )
 const promptInput = () => {
@@ -65,7 +72,7 @@ const promptInput = () => {
             type: 'checkbox',
             name: 'license',
             message: 'Select a license for your application ( * required = 1 )',
-            choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC', 'None'],
+            choices: licenseList, // list generated from licenses.js
             validate: input => {
                 if( input.length === 1 ) { // check for length of 1 to validate single selection
                     return true

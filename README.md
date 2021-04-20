@@ -1,8 +1,9 @@
 
-# test
+# Sample Application
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description 
-test
+This is a generated example of a sample application description
 
 ## Table Of Contents
 * [Installation](#installation)
@@ -13,25 +14,26 @@ test
 * [Questions](#questions)
 
 ## Installation
-  * dsasddasd
-  * dassdasds
-  * dasdsasddasds
-    * dassdasddasdas
-
+  * Sample top level installation instruction
+  * Sample top level installation instruction
+    * Sample sub-level installation instruction
+      * Sample sub-sub-level installation instruction
+  * Sample installation instruction
 
 ## Usage
-[object Object]
+  * Sample usage instruction
 
 ## License
-MIT
+This application is covered under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0) license.
 
 ## Contribution
-[object Object]
+  * Sample contribution instruction
 
 ## Tests
-[object Object]
+  * Sample tests instruction
+
 
 ## Questions
 Please feel free to contact me regarding any further questions:
-* [GitHub Profile](https://github.com/test)
-* [Email Me](mailto://test)
+* [GitHub Profile](https://github.com/PrimalOrB)
+* [Email Me](mailto://primalorb@gmail.com)
