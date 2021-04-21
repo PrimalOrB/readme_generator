@@ -1,9 +1,9 @@
 
-# Sample Application
-[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# README.md Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
-This is a generated example of a sample application description
+A node.js terminal based application to assist with generating a README.md for your GitHub repository
 
 ## Table Of Contents
 * [Installation](#installation)
@@ -14,26 +14,39 @@ This is a generated example of a sample application description
 * [Questions](#questions)
 
 ## Installation
-  * Sample top level installation instruction
-  * Sample top level installation instruction
-    * Sample sub-level installation instruction
-      * Sample sub-sub-level installation instruction
-  * Sample installation instruction
+  * Clone the repository to your local machine
+  * Navigate to the designated folder in bash
+  * Execute 'npm install' to install dependencies
+    * Inquirer npm package will be installed along with its own dependencies
 
 ## Usage
-  * Sample usage instruction
+  * Run 'node index.js' from the terminal
+  * Follow prompts to enter all the required basic information
+    * Title
+    * Description
+    * GitHub username
+    * email address
+  * Choose a license for your project
+  * Input installation instructions
+    * Input a sub-level designation ( the level of indentation for this item )
+    * Input individual installation instruction
+    * Choose whether to add additional instructions
+      * Repeat above steps as desired
+      * Increasing the sub-level designation will allow building a heirarchy list
 
 ## License
-This application is covered under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0) license.
+This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Contribution
-  * Sample contribution instruction
+  * Add instructions for how other users are able to contribute to your project
+    * Follow the same steps as outlined in the usage to define contribution instructions
 
 ## Tests
-  * Sample tests instruction
+  * Add instructions for how users are able to run tests on your project
+    * Follow the same steps as outlined in the usage to define test instructions
 
 
 ## Questions
 Please feel free to contact me regarding any further questions:
-* [GitHub Profile](https://github.com/PrimalOrB)
+* [GitHub Profile](https://github.com/PrimalOrb)
 * [Email Me](mailto://primalorb@gmail.com)

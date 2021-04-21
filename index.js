@@ -110,7 +110,7 @@ Add new ${type} instruction / sub-instruction
         // run inquirer prompts for new list items
     return inquirer.prompt([
         { // ask for list sub-level
-            type: 'number',
+            type: 'input', // changed from "number" to "input" type, as validation would block progress if invalid characters typed in
             name: 'sublevel',
             message: 'Enter list sub-level ( 1 - 4 )',
             default: 1,
